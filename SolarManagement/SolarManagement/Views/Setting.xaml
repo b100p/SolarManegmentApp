@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SolarManagement.Views.Setting"
+             xmlns:vm="clr-namespace:SolarManagement.ViewModels"
+             Title="{Binding Title}">
+    <ContentPage.BindingContext>
+        <vm:SettingViewModel />
+    </ContentPage.BindingContext>
+    <ContentView.Content>
+            <ScrollView>
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <Label HorizontalOptions="CenterAndExpand"
+                           x:Name="accinfo"
+                           Text="Account information"
+                           Margin="10"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           BackgroundColor="WhiteSmoke"/>
+                    <Label Text="Customer Services"
+                           x:Name="custser"
+                           HorizontalOptions="CenterAndExpand"
+                           Margin="10"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           BackgroundColor="WhiteSmoke"
+                           />
+                    <Label Text="Report Issues"
+                           x:Name="report"
+                           HorizontalOptions="CenterAndExpand"
+                           Margin="10"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           BackgroundColor="WhiteSmoke"
+                           />
+                    <Label Text="Sign Out"
+                           x:Name="logout"
+                           HorizontalOptions="CenterAndExpand"
+                           Margin="10"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           TextColor="Black"
+                           BackgroundColor="WhiteSmoke"
+                           />
+                </StackLayout>
+            </ScrollView>
+        </ContentView.Content>
+</ContentPage>

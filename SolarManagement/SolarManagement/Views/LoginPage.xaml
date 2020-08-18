@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SolarManagement.Views.LoginPage"
+             Shell.NavBarIsVisible="False"
+             >
+    <ContentPage.Content>
+        <StackLayout Spacing="20" Padding="15">
+            <Image Source="solar.png"  VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Solar panel manager"
+               />
+
+
+            <Entry x:Name="email" Placeholder="Email"></Entry>
+            <Entry x:Name="pass" IsPassword="True" Placeholder="Password"></Entry>
+
+            <Button Text="Login" x:Name="btnlog" Clicked="btnlog_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
